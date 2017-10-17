@@ -15,6 +15,9 @@
 		5A8C0D6E1F95E70D001B399B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A8C0D6C1F95E70D001B399B /* LaunchScreen.storyboard */; };
 		5A8C0D791F95E70D001B399B /* RFSimplePDFReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C0D781F95E70D001B399B /* RFSimplePDFReaderTests.m */; };
 		5A8C0D841F95E70D001B399B /* RFSimplePDFReaderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C0D831F95E70D001B399B /* RFSimplePDFReaderUITests.m */; };
+		5A8C0D961F95E744001B399B /* PDFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C0D931F95E744001B399B /* PDFScrollView.m */; };
+		5A8C0D971F95E744001B399B /* TiledPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C0D951F95E744001B399B /* TiledPDFView.m */; };
+		5A8C0D991F95E752001B399B /* TestPage.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5A8C0D981F95E752001B399B /* TestPage.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		5A8C0D7F1F95E70D001B399B /* RFSimplePDFReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFSimplePDFReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A8C0D831F95E70D001B399B /* RFSimplePDFReaderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFSimplePDFReaderUITests.m; sourceTree = "<group>"; };
 		5A8C0D851F95E70D001B399B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A8C0D921F95E744001B399B /* PDFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFScrollView.h; sourceTree = "<group>"; };
+		5A8C0D931F95E744001B399B /* PDFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFScrollView.m; sourceTree = "<group>"; };
+		5A8C0D941F95E744001B399B /* TiledPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledPDFView.h; sourceTree = "<group>"; };
+		5A8C0D951F95E744001B399B /* TiledPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledPDFView.m; sourceTree = "<group>"; };
+		5A8C0D981F95E752001B399B /* TestPage.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = TestPage.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +109,13 @@
 		5A8C0D5D1F95E70D001B399B /* RFSimplePDFReader */ = {
 			isa = PBXGroup;
 			children = (
+				5A8C0D911F95E744001B399B /* RFSimplePDFReader */,
 				5A8C0D611F95E70D001B399B /* AppDelegate.h */,
 				5A8C0D621F95E70D001B399B /* AppDelegate.m */,
 				5A8C0D641F95E70D001B399B /* ViewController.h */,
 				5A8C0D651F95E70D001B399B /* ViewController.m */,
 				5A8C0D671F95E70D001B399B /* Main.storyboard */,
+				5A8C0D981F95E752001B399B /* TestPage.pdf */,
 				5A8C0D6A1F95E70D001B399B /* Assets.xcassets */,
 				5A8C0D6C1F95E70D001B399B /* LaunchScreen.storyboard */,
 				5A8C0D6F1F95E70D001B399B /* Info.plist */,
@@ -138,6 +148,17 @@
 				5A8C0D851F95E70D001B399B /* Info.plist */,
 			);
 			path = RFSimplePDFReaderUITests;
+			sourceTree = "<group>";
+		};
+		5A8C0D911F95E744001B399B /* RFSimplePDFReader */ = {
+			isa = PBXGroup;
+			children = (
+				5A8C0D921F95E744001B399B /* PDFScrollView.h */,
+				5A8C0D931F95E744001B399B /* PDFScrollView.m */,
+				5A8C0D941F95E744001B399B /* TiledPDFView.h */,
+				5A8C0D951F95E744001B399B /* TiledPDFView.m */,
+			);
+			path = RFSimplePDFReader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A8C0D6E1F95E70D001B399B /* LaunchScreen.storyboard in Resources */,
+				5A8C0D991F95E752001B399B /* TestPage.pdf in Resources */,
 				5A8C0D6B1F95E70D001B399B /* Assets.xcassets in Resources */,
 				5A8C0D691F95E70D001B399B /* Main.storyboard in Resources */,
 			);
@@ -275,6 +297,8 @@
 			files = (
 				5A8C0D661F95E70D001B399B /* ViewController.m in Sources */,
 				5A8C0D631F95E70D001B399B /* AppDelegate.m in Sources */,
+				5A8C0D961F95E744001B399B /* PDFScrollView.m in Sources */,
+				5A8C0D971F95E744001B399B /* TiledPDFView.m in Sources */,
 				5A8C0D601F95E70D001B399B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
